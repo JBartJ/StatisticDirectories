@@ -16,7 +16,7 @@ void show_and_count_files_and_lines(string path)
 	int non_empty_lines_amount = 0;
 	string line;
 	string f_name;
-	
+
 		for (const auto & name : fs::directory_iterator(path))
 		{
 			if (fs::is_regular_file(name))
@@ -43,7 +43,7 @@ void show_and_count_files_and_lines(string path)
 		cout << "The amount of files is: " << file_amount << endl;
 		cout << "The amount of lines is: " << lines_amount << endl;
 		cout << "The amount of empty lines is: " << empty_lines_amount << endl;
-		cout << "The amount of lines that are not empty is: " << empty_lines_amount << endl;
+		cout << "The amount of lines that are not empty is: " << non_empty_lines_amount << endl;
 }
 
 int main()
